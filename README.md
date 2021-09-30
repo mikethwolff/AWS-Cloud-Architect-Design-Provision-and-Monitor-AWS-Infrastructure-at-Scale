@@ -58,7 +58,7 @@ My Estimate	US East (N. Virginia)	Amazon Aurora PostgreSQL-Compatible DB	0	6,560
 My Estimate	US East (N. Virginia)	Amazon Virtual Private Cloud (VPC)	0	434.34	5212.08	USD	Number of NAT Gateways (2)
 My Estimate	US East (N. Virginia)	Amazon Route 53	0	938.5	11262	USD	Hosted Zones (2), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (10)
 							
-Total:	9728.16	116737.92	USD	
+Total:	9728.16		116737.92	USD	
 							
 Acknowledgement							
 * AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.							
@@ -82,7 +82,7 @@ My Estimate	US East (N. Virginia)	Amazon Aurora PostgreSQL-Compatible DB	0	4,469
 My Estimate	US East (N. Virginia)	Amazon Virtual Private Cloud (VPC)	0	434.34	5212.08	USD	Number of NAT Gateways (2)
 My Estimate	US East (N. Virginia)	Amazon Route 53	0	482.25	5,787	USD	Hosted Zones (2), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (5)
 							
-Total:	6312.47	75,749.64	USD	
+Total:	6312.47		75,749.64	USD	
 							
 - Pricing strategy changed from on-demand to EC2 Instance Savings Plans 1 Year No Upfront on all servers				
 - RDS pricing strategy changed from on-demand to Reserved 1yr No Upfront				
@@ -137,5 +137,5 @@ Take an updated screenshot of the AWS console showing only the 4 t2.micro instan
 
 **Solution:**
 
-![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Udacity_Diagram_1.jpg)
-![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Udacity_Diagram_1.jpg)
+![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Terraform_1_1.png)
+![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Terraform_1_2.png)

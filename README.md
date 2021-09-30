@@ -130,10 +130,9 @@ Download the starter code. In the main.tf file write the code to provision
 - 4 AWS t2.micro EC2 instances named Udacity T2
 - 2 m4.large EC2 instances named Udacity M4
 - Run Terraform.
-
-Take a screenshot of the 6 EC2 instances in the AWS console. Save it as Terraform_1_1.png or Terraform_1_1.jpg .
-Use Terraform to delete the 2 m4.large instances.
-Take an updated screenshot of the AWS console showing only the 4 t2.micro instances and save it as Terraform_1_2.png or Terraform_1_2.jpg
+- Take a screenshot of the 6 EC2 instances in the AWS console
+- Use Terraform to delete the 2 m4.large instances
+- Take an updated screenshot of the AWS console showing only the 4 t2.micro instances
 
 **Solution:**
 

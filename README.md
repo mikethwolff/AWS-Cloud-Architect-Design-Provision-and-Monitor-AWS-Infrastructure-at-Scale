@@ -82,11 +82,12 @@ My Estimate	US East (N. Virginia)	Amazon Aurora PostgreSQL-Compatible DB	0	4,469
 My Estimate	US East (N. Virginia)	Amazon Virtual Private Cloud (VPC)	0	434.34	5212.08	USD	Number of NAT Gateways (2)
 My Estimate	US East (N. Virginia)	Amazon Route 53	0	482.25	5,787	USD	Hosted Zones (2), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (5)
 							
-			Total:	6312.47	75,749.64	USD	
+Total:	6312.47	75,749.64	USD	
 							
-			Pricing strategy changed from on-demand to EC2 Instance Savings Plans 1 Year No Upfront on all servers				
-			RDS pricing strategy changed from on-demand to Reserved 1yr No Upfront				
-			Route 53 with reduced number of Elastic Network Interfaces				
+- Pricing strategy changed from on-demand to EC2 Instance Savings Plans 1 Year No Upfront on all servers				
+- RDS pricing strategy changed from on-demand to Reserved 1yr No Upfront				
+- Route 53 with reduced number of Elastic Network Interfaces	
+
 Acknowledgement							
 * AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.							
 ```
@@ -107,11 +108,11 @@ My Estimate	US East (N. Virginia)	Amazon Aurora PostgreSQL-Compatible DB	0	8441.
 My Estimate	US East (N. Virginia)	Amazon Virtual Private Cloud (VPC)	0	434.34	5212.08	USD	Number of NAT Gateways (2)
 My Estimate	US East (N. Virginia)	Amazon Route 53	0	1851	22212	USD	Hosted Zones (2), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (20)
 							
-			Total:	19217.566	230610.79	USD	
+Total:	19217.566	230610.79	USD	
 							
-			Increase number of virtual CPUs and amount of memory on EC2s				
-			Route 53 increase of Number of Elastic Network Interfaces				
-			RDS instance upgrade with increased number of CPU cores and amount of memory				
+- Increase number of virtual CPUs and amount of memory on EC2s				
+- Route 53 increase of Number of Elastic Network Interfaces				
+- RDS instance upgrade with increased number of CPU cores and amount of memory				
 							
 Acknowledgement							
 * AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.							

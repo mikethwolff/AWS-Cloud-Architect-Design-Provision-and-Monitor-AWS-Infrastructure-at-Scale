@@ -33,4 +33,4 @@ Export your schematic as a PDF and save as Udacity_Diagram_1.pdf.
 
 **Solution:**
 
-![alt text](https://github.com/MichaelThomasWolff/Security-Analyst-Projects-Udacity/blob/main/Planning%20for%20Security%20Controls/Findings/OpenVPN%20Network%20Diagram%20Solution.jpg)
+![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Udacity_Diagram_1.pdf)

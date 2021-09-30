@@ -62,7 +62,7 @@ Total:	9728.16	116737.92	USD
 							
 Acknowledgement							
 * AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.							
-...
+```
 
 Return to the AWS Pricing Calculator and reconfigure your estimates for the following scenarios:
 
@@ -89,7 +89,7 @@ My Estimate	US East (N. Virginia)	Amazon Route 53	0	482.25	5,787	USD	Hosted Zone
 			Route 53 with reduced number of Elastic Network Interfaces				
 Acknowledgement							
 * AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.							
-...
+```
 
 Your budget has been increased to $20,000. What resources will you add and why?
 Think about where to add redundancy and how to improve performance. Re-configure your estimate to a monthly invoice of $18K-20K. Export the updated costs to a CSV file named Increased_Cost Estimate.csv and write up a brief narrative of the changes you made in the CSV file below the cost estimate.
@@ -115,11 +115,12 @@ My Estimate	US East (N. Virginia)	Amazon Route 53	0	1851	22212	USD	Hosted Zones 
 							
 Acknowledgement							
 * AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.							
-...
+```
 
 **Task 5: Use Terraform to Provision AWS Infrastructure**
 
 **Part 1**
+
 Download the starter code. In the main.tf file write the code to provision
 
 - AWS as the cloud provider
@@ -134,7 +135,6 @@ Use Terraform to delete the 2 m4.large instances.
 Take an updated screenshot of the AWS console showing only the 4 t2.micro instances and save it as Terraform_1_2.png or Terraform_1_2.jpg
 
 **Solution:**
-Increased_Cost Estimate.csv
-```
+
 ![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Udacity_Diagram_1.jpg)
 ![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Udacity_Diagram_1.jpg)

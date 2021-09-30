@@ -13,6 +13,7 @@ In this project, you will plan, design, provision, and monitor infrastructure in
 **Task 1: Create AWS Architecture Schematics**
 
 **Part 1**
+
 You have been asked to plan and provision a cost-effective AWS infrastructure for a new social media application development project for 50,000 single-region users. The project requires the following AWS infrastructure and services. Please include your name and label all elements of the infrastructure on the diagram.
 
 - Infrastructure in the following regions: us-east-1
@@ -36,6 +37,7 @@ Export your schematic as a PDF and save as Udacity_Diagram_1.pdf.
 ![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Udacity_Diagram_1.jpg)
 
 **Task 2: Calculate Infrastructure Costs**
+
 Use the AWS Pricing Calculator to estimate how much it will cost to run the services in your Part 1 diagram for one month.
 
 - Target a monthly estimate between $8,000-$10,000.
@@ -43,6 +45,7 @@ Use the AWS Pricing Calculator to estimate how much it will cost to run the serv
 - Export the estimate as a CSV file named Initial_Cost_Estimate.csv.
 
 **Solution:**
+
 Initial_Cost_Estimate.csv
 ```
 Group hierarchy	Region	Service	Upfront	Monthly	First 12 months total	Currency	Configuration summary
@@ -55,7 +58,7 @@ My Estimate	US East (N. Virginia)	Amazon Aurora PostgreSQL-Compatible DB	0	6,560
 My Estimate	US East (N. Virginia)	Amazon Virtual Private Cloud (VPC)	0	434.34	5212.08	USD	Number of NAT Gateways (2)
 My Estimate	US East (N. Virginia)	Amazon Route 53	0	938.5	11262	USD	Hosted Zones (2), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (10)
 							
-			Total:	9728.16	116737.92	USD	
+Total:	9728.16	116737.92	USD	
 							
 Acknowledgement							
 * AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.							
@@ -66,6 +69,7 @@ Return to the AWS Pricing Calculator and reconfigure your estimates for the foll
 Your budget has been reduced from $8,000-$10,000 to a maximum of $6,500. What services will you modify to meet this new budget? Export the updated costs in a CSV file named Reduced_Cost_Estimate.csv and write up a brief narrative of the changes you made in the CSV file below the cost estimate.
 
 **Solution:**
+
 Reduced_Cost_Estimate.csv
 ```
 Group hierarchy	Region	Service	Upfront	Monthly	First 12 months total	Currency	Configuration summary

@@ -275,8 +275,41 @@ resource "aws_lambda_function" "geeting_lambda" {
   depends_on = [aws_iam_role_policy_attachment.lambda_logs_policy, aws_cloudwatch_log_group.lambda_log_group]
 }
 ```
-main.tf
+
+greet_lambda.py
 ```
+import os
+
+def lambda_handler(event, context):
+    return "{} from Lambda!".format(os.environ['greeting'])
+```
+
+variables.tf
+```
+# TODO: Define the variable for aws_region
+
+variable "aws_region" {
+  default = "us-east-1"
+}
+
+variable "lambda_name" {
+  default = "greet_lambda"
+}
+
+variable "lambda_output_path" {
+  default = "output.zip"
+}
+```
+
+outputs.tf
+```
+# TODO: Define the output variable for the lambda function.
+
+output "lambda_function_arn" {
+  value = "${aws_lambda_function.geeting_lambda.arn}"
+}
+```
+
 ![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Terraform_2_1.png)
 ![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Terraform_2_2.png)
 ![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Terraform_2_3.png)

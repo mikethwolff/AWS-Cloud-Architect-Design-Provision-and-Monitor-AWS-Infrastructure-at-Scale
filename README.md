@@ -122,7 +122,7 @@ Acknowledgement
 
 **Part 1**
 
-Download the starter code. In the main.tf file write the code to provision
+Download the starter code. In the main-terraform.tf file write the code to provision
 
 - AWS as the cloud provider
 - Use an existing VPC ID
@@ -135,6 +135,54 @@ Download the starter code. In the main.tf file write the code to provision
 - Take an updated screenshot of the AWS console showing only the 4 t2.micro instances
 
 **Solution:**
+
+main-terraform.tf
+```
+# TODO: Designate a cloud provider, region, and credentials
+
+provider "aws" {
+access_key = "***"
+secret_key = "***"
+region = "us-east-1"
+}
+
+# TODO: provision 4 AWS t2.micro EC2 instances named Udacity T2
+
+resource "aws_instance" "Udacity_T2" {
+  count = "4"
+  ami = "ami-087c17d1fe0178315"
+  instance_type = "t2.micro"
+  tags = {
+    name = "Udacity_T2"
+  }
+}
+
+# TODO: provision 2 m4.large EC2 instances named Udacity M4
+
+resource "aws_instance" "Udacity_M4" {
+  count = "2"
+  ami = "ami-087c17d1fe0178315"
+  instance_type = "m4.large"
+  tags = {
+    name = "Udacity_M4"
+  }
+}
+```
+
+![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Terraform_1_1.png)
+![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Terraform_1_2.png)
+
+**Part 2**
+
+In the Exercise_2 folder, write the code to deploy an AWS Lambda Function using Terraform. Your code should include:
+A lambda.py file, a main.tf file, outputs.tf file, variables.tf file
+
+- Take a screenshot of the EC2 instances page
+- Take a screenshot of the VPC page
+- Take a screenshot of the CloudWatch log entry for the lambda function execution
+
+**Solution:**
+
 main.tf
 ```
 #cloud provider 
@@ -227,22 +275,8 @@ resource "aws_lambda_function" "geeting_lambda" {
   depends_on = [aws_iam_role_policy_attachment.lambda_logs_policy, aws_cloudwatch_log_group.lambda_log_group]
 }
 ```
-
-
-![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Terraform_1_1.png)
-![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Terraform_1_2.png)
-
-**Part 2**
-
-In the Exercise_2 folder, write the code to deploy an AWS Lambda Function using Terraform. Your code should include:
-A lambda.py file, a main.tf file, outputs.tf file, variables.tf file
-
-- Take a screenshot of the EC2 instances page
-- Take a screenshot of the VPC page
-- Take a screenshot of the CloudWatch log entry for the lambda function execution
-
-**Solution:**
-
+main.tf
+```
 ![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Terraform_2_1.png)
 ![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Terraform_2_2.png)
 ![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Terraform_2_3.png)

@@ -317,6 +317,11 @@ output "lambda_function_arn" {
 
 ![alt text](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Terraform_2_3.png)
 
+**Task 6: Destroy the Infrastructure using Terraform and prepare for submission**
 
+- Destroy all running provisioned infrastructure using Terraform so as not to incur unwanted charges
+- Take a screenshot of the EC2 instances page
+- Upload Terraform files, screenshots, schematics and CSV files to your GitHub repo
 
+![Terraform_destroyed](https://github.com/mikethwolff/AWS-Cloud-Architect-Project-Design-Provision-and-Monitor-AWS-Infrastructure-at-Scale/blob/main/Design%2C%20Provision%20and%20Monito%20AWS%20Infrastructure%20at%20Scale/Terraform_destroyed.png)
 
